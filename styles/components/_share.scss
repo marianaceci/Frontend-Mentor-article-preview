@@ -1,0 +1,83 @@
+.share-div{
+    background-color: $very-dark-grayish-blue;
+    width: 350px;
+    height: 65px;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    span {
+        text-transform: uppercase;
+        color: $grayish-blue;
+        letter-spacing: 0.5rem;
+        margin-left: 5%;
+    }
+
+    .icons {
+        color: $light-grayish-blue;
+        font-size: 1.75rem;
+        margin-right: 10%;
+        i {
+            padding: 0 5px;
+        }
+    }
+
+    .button-off {
+        background-color: $desaturated-dark-blue;
+        color: $light-grayish-blue;
+        font-size: 1.125rem;
+        border: none;
+        border-radius: 50%;
+        padding: 8px 10px;
+        margin-right: 20px;
+    }
+    
+
+    @media screen and (min-width: 763px){            
+        position: absolute;
+        width: 190px;
+        height: 50px;
+        border-radius: 10px;
+        top: 113px;
+        left: 231px;
+        justify-content: space-evenly;
+        padding: 0 15px;
+
+        &::after{
+            content: '';
+            background-color: $very-dark-grayish-blue;
+            width: 18px;
+            height: 18px;
+            position:absolute;
+            top: 40px;
+            left: 95px;
+            transform: rotate(45deg);
+        }
+
+        span {
+            letter-spacing: 0.3rem;
+            font-size: 0.9rem;
+            margin-left: 0px;
+        }
+
+        .icons {
+            font-size: 1.5rem;
+            margin-right: 0px;                        
+        }    
+
+        .button-off{
+            position: absolute;
+            left: 85px;
+            top: 75px;
+            margin: 0;
+        }
+    }    
+}
+
+.hidden{
+    display: none;
+}

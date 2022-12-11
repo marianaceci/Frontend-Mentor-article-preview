@@ -1,0 +1,26 @@
+main {
+    background-color: $light-grayish-blue;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
+
+    .img-dresser {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 220px;
+        object-fit: cover;
+        object-position: 0 -15px;
+    }    
+
+    @media screen and (min-width: 763px){
+        width: 640px;
+        height: 250px;
+        display: flex;
+
+        .img-dresser {
+            border-radius: 10px 0px 0px 10px;
+            height: 100%;
+            width: 250px;
+            object-position: 0 0;
+        }
+    }
+}

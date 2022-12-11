@@ -1,0 +1,51 @@
+.profile-div{ 
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .img-profile{
+        border-radius: 50%;
+        width: 40px;
+    }
+
+    .name {
+        margin-left: 15px;
+
+        p{
+            color: $very-dark-grayish-blue;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        span {
+            color: $grayish-blue;
+        }
+    }
+
+    .button-on {
+        margin-left: auto;
+        color: $desaturated-dark-blue;
+        border: none;
+        background-color: $grayish-blue;
+        border-radius: 50%;
+        padding: 8px 10px;
+        font-size: 1.125rem;
+    }       
+        
+    @media screen and (min-width: 763px){
+        margin-top: 20px;
+
+        .img-profile{
+            width: 35px;
+        }
+    
+        .name {
+                font-size: 0.9rem;
+        }
+
+        .button-on {
+            padding: 8px 10px;
+            font-size: 1rem;
+        }     
+    }
+}

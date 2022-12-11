@@ -1,0 +1,27 @@
+section {
+    position: relative;
+    padding: 40px 35px 15px 30px;
+
+    h1 {
+        color: $very-dark-grayish-blue;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.85rem;
+    }
+
+    .text {
+        color: $desaturated-dark-blue;
+        margin: 15px 0;
+        line-height: 1.6rem;
+        font-size: 1.115rem;
+    }
+        
+    @media screen and (min-width: 763px){                
+        padding: 30px 40px 20px 40px;
+
+        .text {
+            font-size: 0.875rem;
+            line-height: 1.3rem;
+        }        
+    }
+}
